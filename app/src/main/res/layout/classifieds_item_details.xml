@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="#f2f2f2"
+        android:paddingLeft="7dp"
+        android:layout_height="48dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/home_classifieds"
+            android:id="@+id/sub_cat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/classifieds_item_cat"
+            android:text="Title"
+            android:layout_marginLeft="7dp"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Widget.IconMenu.Item"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/classifieds_item_title"
+        android:text="Title"
+        android:layout_marginLeft="7dp"
+        android:padding="7dp"
+        android:textColor="#fb0d1a"
+        android:textStyle="bold"
+        style="@android:style/TextAppearance.Widget.IconMenu.Item"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="fill_parent"
+        android:background="#e4e4e6"
+        android:layout_height="1dp"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:background="@drawable/temp_banner"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/vp_move_left"
+            android:src="@drawable/view_pager_left_"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/vp_move_right"
+            android:src="@drawable/view_pager_right_"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_height="30dp" />
+        <gofabby.com.custom_layouts.View_pager
+            android:layout_width="fill_parent"
+
+            android:id="@+id/vp"
+            android:layout_height="wrap_content"></gofabby.com.custom_layouts.View_pager>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+            >
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:padding="10dp" />
+        </RelativeLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:background="#e4e4e6"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

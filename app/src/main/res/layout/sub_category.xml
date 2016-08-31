@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_height="48dp">
+<ImageView
+    android:layout_width="30dp"
+    android:src="@drawable/home_classifieds"
+    android:id="@+id/sub_cat_icon"
+    android:layout_gravity="center_vertical"
+    android:layout_height="30dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/sub_cat_name"
+            android:text="Title"
+            android:layout_marginLeft="7dp"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Widget.IconMenu.Item"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#dadada"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="fill_parent"
+            android:scrollbars="none"
+            android:id="@+id/rv"
+
+            android:layout_height="fill_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_lay"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:background="@drawable/temp_banner"
+
+            android:layout_height="wrap_content">
+            <gofabby.com.custom_layouts.View_pager
+                android:layout_width="fill_parent"
+
+                android:id="@+id/vp"
+                android:layout_height="wrap_content"></gofabby.com.custom_layouts.View_pager>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom"
+                android:background="#8000acf3">
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/titles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

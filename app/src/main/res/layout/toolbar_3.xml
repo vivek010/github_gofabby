@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="fill_parent"
+    android:contentInsetLeft="0dp"
+    android:id="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    app:layout_scrollFlags="enterAlwaysCollapsed"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="#eaeeee"
+        android:id="@+id/footbar"
+
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+
+            android:layout_height="fill_parent">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/footter_icon_home"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+
+            android:layout_height="fill_parent">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/footter_icon_person"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+            <ImageView
+
+                android:src="@drawable/footter_icon_comment"
+                android:layout_margin="7dp"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/footter_icon_search"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"></include>
+    <include layout="@layout/toolbar_2"></include>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/fragment_lay"
+            android:layout_above="@+id/footbar"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:background="#eaeeee"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/footbar"
+
+            android:layout_height="?attr/actionBarSize">
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+
+                android:layout_height="fill_parent">
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/footter_icon_home"
+                    android:layout_margin="13dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+
+                android:layout_height="fill_parent">
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/footter_icon_person"
+                    android:layout_margin="13dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <ImageView
+
+                    android:src="@drawable/footter_icon_comment"
+                    android:layout_margin="13dp"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/footter_icon_search"
+                    android:layout_margin="13dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
